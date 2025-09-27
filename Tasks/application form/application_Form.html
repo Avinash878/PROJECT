@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+</head>
+<body>
+
+  <h2>Application Form</h2>
+
+  <form>
+    
+    <!-- Name -->
+    <label for="fullName">Full Name:</label><br>
+    <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Gmail Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your mail" required><br><br>
+
+    <!-- Gender -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required> Male
+    <input type="radio" id="female" name="gender" value="Female"> Female
+    <input type="radio" id="other" name="gender" value="Other"> Other <br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <!-- Courses -->
+    <label>Choose Your Courses:</label><br>
+    <input type="checkbox" name="course" value="Machine Learning"> Machine Learning <br>
+    <input type="checkbox" name="course" value="Artificial Intelligence"> Artificial Intelligence <br>
+    <input type="checkbox" name="course" value="Data Science"> Data Science <br>
+    <input type="checkbox" name="course" value="Web Development"> Web Development <br><br>
+
+    <!-- Country -->
+    <label for="country">Select Country:</label><br>
+    <select id="country" name="country" required>
+      <option value="">--Select--</option>
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Canada">Canada</option>
+      <option value="Australia">Australia</option>
+    </select><br><br>
+
+    <!-- File Upload -->
+    <label for="document">Upload Your Document:</label><br>
+    <input type="file" id="document" name="document" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Set a Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+
+    <!-- Submit -->
+    <input type="submit" value="Submit Application">
+
+  </form>
+
+</body>
+</html>

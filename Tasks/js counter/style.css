@@ -1,0 +1,26 @@
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #6b73ff, #000dff);
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+
+    .counter {
+      perspective: 1000px;
+    }
+
+    .number {
+      font-size: 10rem;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 0 0 20px rgba(255,255,255,0.7);
+      transform-style: preserve-3d;
+      transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .number.flip {
+      transform: rotateX(360deg);
+    }

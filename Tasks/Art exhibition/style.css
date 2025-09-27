@@ -1,0 +1,148 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background:yellowgreen;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      margin: 0 15px;
+    }
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar ul li a:hover {
+      color: gold;
+    }
+
+    /* Banner */
+    .banner {
+      /* background: url("C:\Users\HP\Downloads\avinash\art img _bg.webp") center/cover no-repeat; */
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    /* Gallery */
+    .gallery {
+      padding: 50px 10%;
+      text-align: center;
+    }
+    .gallery h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery-container img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+    .popup img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #000;
+    }
+    .popup span {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 50px 10%;
+      background: #f9f9f9;
+    }
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .contact input, .contact textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .contact button {
+      padding: 12px;
+      background: #222;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .contact button:hover {
+      background: gold;
+      color: black;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }

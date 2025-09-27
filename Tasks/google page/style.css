@@ -1,0 +1,99 @@
+ 
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3e5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 15px 25px;
+    }
+
+    header a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+    }
+
+    .signin {
+      border: 1px solid #333;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 300px;
+    }
+
+    .search-box {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      width: 500px;
+      max-width: 90%;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      padding: 8px 15px;
+      background: white;
+    }
+
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .search-box button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons input {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: #f1f1f1;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .buttons input:hover {
+      background: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e1bee7;
+      font-size: 14px;
+    }
+
+    footer a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+  
